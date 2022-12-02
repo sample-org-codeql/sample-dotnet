@@ -23,7 +23,6 @@ public static class Program
 
         string[] strings = { "hello", "world" };
         string[] moreStrings = { "hello", "world" };
-        WriteLine(strings.SequenceEqual(moreStrings));
         WriteLine(DeepEquals(strings, moreStrings));
   }
 
