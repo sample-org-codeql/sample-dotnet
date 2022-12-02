@@ -1,4 +1,4 @@
-# .NET Core Development Sample
+# c.NET Core Development Sample
 
 This .NET Core Docker sample demonstrates how to use Docker in your .NET Core development process. It builds multiple projects and executes unit tests in a container. The sample works with both Linux and Windows containers.
 
