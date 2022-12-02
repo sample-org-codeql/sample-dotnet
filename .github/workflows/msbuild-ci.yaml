@@ -21,7 +21,7 @@ jobs:
     - run: nuget restore dotnetapp-dev.sln
 
     - uses: microsoft/setup-msbuild@v1.1
-      run: msbuild .\dotnetapp-dev.sln
+    - run: msbuild .\dotnetapp-dev.sln
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
