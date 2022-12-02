@@ -20,6 +20,9 @@ public static class Program
         WriteLine($"Platform: .NET Core 2.0");
         WriteLine($"OS: {RuntimeInformation.OSDescription}");
         WriteLine();
+        Console.WriteLine(RandomNumber());
+        Console.WriteLine(RandomNumber());
+        Console.WriteLine(RandomNumber());
 
         string[] strings = { "hello", "world" };
         string[] moreStrings = { "hello", "world" };
@@ -49,6 +52,15 @@ public static class Program
         // arrays are equal.
         return true;
     }
+  
+  private static Random generator;
+
+  private static int RandomNumber()
+  {
+      // This should probably have said "generator ?? new Random()".
+      generator = generator ?? generator;
+      return generator.Next();
+  }
 
   public static string GetBot(string message) 
   {
