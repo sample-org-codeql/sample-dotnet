@@ -1,0 +1,12 @@
+name: msbuild ci
+
+on:
+  push:
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    steps:
+
+    - uses: actions/checkout@v3
