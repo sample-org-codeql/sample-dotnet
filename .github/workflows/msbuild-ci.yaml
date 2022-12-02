@@ -13,6 +13,8 @@ jobs:
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
+      with:
+        queries: security-and-quality
 
     - name: Setup NuGet.exe
       uses: nuget/setup-nuget@v1
@@ -25,3 +27,4 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+      
